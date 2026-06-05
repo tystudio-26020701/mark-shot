@@ -24,7 +24,7 @@ gh auth login
 
 ### 方式一：使用辅助脚本自动收集环境（推荐，支持中英双语）
 
-本项目在 [scripts/submit-issue.sh](file:///home/snemc/workspace/mark-shot/scripts/submit-issue.sh) 中提供了一个自动化脚本。此脚本会自动收集当前主机的以下环境信息：
+本项目在 [scripts/submit-issue.sh](../scripts/submit-issue.sh) 中提供了一个自动化脚本。此脚本会自动收集当前主机的以下环境信息：
 - 操作系统版本
 - 当前窗口管理器或桌面环境
 - 显示服务器类型（Wayland 或 X11）
@@ -40,12 +40,12 @@ gh auth login
 1. 运行后，脚本会首先提示您选择首选语言（中文或英文）。
 2. 接着提示选择 Issue 类型（Bug 报告或功能请求）。
 3. 若选择 Bug 报告，脚本将自动提取当前系统的各项参数，填入对应的模板中：
-   - 中文版：[bug_report_zh.md](file:///home/snemc/workspace/mark-shot/.github/ISSUE_TEMPLATE/bug_report_zh.md)
-   - 英文版：[bug_report_en.md](file:///home/snemc/workspace/mark-shot/.github/ISSUE_TEMPLATE/bug_report_en.md)
+   - 中文版：[bug_report_zh.md](../.github/ISSUE_TEMPLATE/bug_report_zh.md)
+   - 英文版：[bug_report_en.md](../.github/ISSUE_TEMPLATE/bug_report_en.md)
 4. 随后脚本会调用 `gh issue create`，在终端引导您输入 Issue 标题，并提供进一步编辑描述内容或直接提交的选项。
 5. 若选择功能请求，脚本会直接载入对应的模板供您填写：
-   - 中文版：[feature_request_zh.md](file:///home/snemc/workspace/mark-shot/.github/ISSUE_TEMPLATE/feature_request_zh.md)
-   - 英文版：[feature_request_en.md](file:///home/snemc/workspace/mark-shot/.github/ISSUE_TEMPLATE/feature_request_en.md)
+   - 中文版：[feature_request_zh.md](../.github/ISSUE_TEMPLATE/feature_request_zh.md)
+   - 英文版：[feature_request_en.md](../.github/ISSUE_TEMPLATE/feature_request_en.md)
 
 ---
 
